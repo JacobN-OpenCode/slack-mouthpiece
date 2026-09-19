@@ -1,0 +1,24 @@
+display_information:
+  name: Mouthpiece
+  description: Reads your typed messages out loud to your huddle in a clone of your voice.
+  background_color: "#1a1d21"
+
+features:
+  bot_user:
+    display_name: Mouthpiece
+    always_online: true
+
+oauth_config:
+  scopes:
+    bot:
+      - channels:history
+      - channels:read
+      - chat:write
+      - reactions:write
+      - users:read
+
+settings:
+  event_subscriptions:
+    bot_events:
+      - message.channels
+  socket_mode_enabled: true

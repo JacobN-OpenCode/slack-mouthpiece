@@ -1,0 +1,20 @@
+{
+  "name": "slack-mouthpiece",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Type in a Slack channel, and it reads it out loud to your huddle in a clone of your voice.",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "test:audio": "bun run src/test-audio.ts",
+    "typecheck": "bunx tsc --noEmit"
+  },
+  "dependencies": {
+    "@slack/bolt": "^4.2.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
